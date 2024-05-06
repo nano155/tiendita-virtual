@@ -9,6 +9,9 @@ export class UserRepositoryImpl implements UserRepository{
     constructor(
         public readonly UserService:UserDatasource
     ){}
+    validateEmail(token: string): Promise<Boolean> {
+        return this.UserService.validateEmail(token)
+    }
     loginUser(userDto: LoginUserDto): Promise<{ userEntity: Omit<UserEntity, 'password'>; token: any; }> {
         return this.UserService.loginUser(userDto)
     }

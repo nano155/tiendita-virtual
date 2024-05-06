@@ -39,4 +39,14 @@ export class UsersController {
     })
     res.sendStatus(200)
   }
+
+  public validateEmail = (req:Request, res:Response) =>{
+
+    const {token} = req.params
+
+    this.userRepository.validateEmail(token)
+    .then(() => res.json('Email validated'))
+    .catch((error) => res.status(500).json({error: error.message}));
+
+  }
 }

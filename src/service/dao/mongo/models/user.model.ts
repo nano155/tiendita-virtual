@@ -16,6 +16,10 @@ const userSchema = new mongoose.Schema({
         required:true,
         unique: true,
     },
+    emailValidate:{
+        type:Boolean,
+        default:false
+    },
     age:{
         type: Number,
         required:true,
@@ -34,6 +38,7 @@ const userSchema = new mongoose.Schema({
         enum:['admin', 'user'],
         default: 'user'
     }
+
 })
 
 userSchema.pre('findOne', function() {
