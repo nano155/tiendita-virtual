@@ -1,0 +1,102 @@
+[
+	{
+		"id": "fdf9ef516e552bcddfdc33fc",
+		"title": "Sabroso Plástico Raton",
+		"description": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+		"code": "a13badbc-fb98-4478-bbaa-df22378d104c",
+		"stock": "9",
+		"category": "accesorios",
+		"price": "227.00",
+		"thumbnails": "https://loremflickr.com/640/480?lock=8297805082787840"
+	},
+	{
+		"id": "2306c7b133b7f1543026a8a7",
+		"title": "Ergonómico Madera Pescado",
+		"description": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+		"code": "487cbd42-cd13-4334-b095-726a4fcb7baa",
+		"stock": "0",
+		"category": "electrodomésticos",
+		"price": "834.00",
+		"thumbnails": "https://loremflickr.com/640/480?lock=896814389657600"
+	},
+	{
+		"id": "9c9bde7accc9276beacdb76c",
+		"title": "Hecho a mano Madera Atún",
+		"description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+		"code": "627918d6-f4c1-4602-86a6-a634ad934c50",
+		"stock": "5",
+		"category": "telefonos",
+		"price": "604.00",
+		"thumbnails": "https://picsum.photos/seed/G8XlwwrLF/640/480"
+	},
+	{
+		"id": "cdf0a86f64176485482b92be",
+		"title": "Rústico Algodón Salchichas",
+		"description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+		"code": "6a8b7a5e-8dc3-47f6-b326-5c1b82f9b8e5",
+		"stock": "6",
+		"category": "electrodomésticos",
+		"price": "53.00",
+		"thumbnails": "https://loremflickr.com/640/480?lock=3950385660166144"
+	},
+	{
+		"id": "8b2d7eb8af5ec2a132e84b04",
+		"title": "Sabroso Algodón Teclado",
+		"description": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
+		"code": "6cc8064f-45fb-491b-b87b-8018393cf0dd",
+		"stock": "6",
+		"category": "telefonos",
+		"price": "48.00",
+		"thumbnails": "https://picsum.photos/seed/KcyAdUxo/640/480"
+	},
+	{
+		"id": "696ee5af2fbee0cfb16e5ada",
+		"title": "Hecho a mano Acero Zapatos",
+		"description": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+		"code": "a7a11817-2477-473c-84e1-269e2ccb54f1",
+		"stock": "7",
+		"category": "electrodomésticos",
+		"price": "773.00",
+		"thumbnails": "https://loremflickr.com/640/480?lock=1532227963846656"
+	},
+	{
+		"id": "125e9daacec2db3fcfcca127",
+		"title": "Guapo Ladrillo Atún",
+		"description": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+		"code": "8c4225c6-25a5-4fac-9e49-eb0ef57eeda0",
+		"stock": "3",
+		"category": "accesorios",
+		"price": "817.00",
+		"thumbnails": "https://picsum.photos/seed/hSxhAB/640/480"
+	},
+	{
+		"id": "bcfd2fa1fc83e9675b85c320",
+		"title": "Artesanal Madera Bacon",
+		"description": "The Football Is Good For Training And Recreational Purposes",
+		"code": "09d829e7-88e8-49f4-b784-8e6637697d00",
+		"stock": "1",
+		"category": "televisores",
+		"price": "830.00",
+		"thumbnails": "https://picsum.photos/seed/UxMfJ7/640/480"
+	},
+	{
+		"id": "0695dcdcebb3883cd2f773bb",
+		"title": "Hecho a mano Madera Camiseta",
+		"description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+		"code": "f694c20a-f98c-4f4e-83da-32925299bdb2",
+		"stock": "6",
+		"category": "electrodomésticos",
+		"price": "313.00",
+		"thumbnails": "https://loremflickr.com/640/480?lock=3259921304911872"
+	},
+	{
+		"id": "e1abfa3a4cb7b3fb70d14bc7",
+		"title": "Guapo Metal Toallas",
+		"description": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+		"code": "c7448ef9-0a6a-4eb1-823c-0cb79e8e11fb",
+		"stock": "1",
+		"category": "accesorios",
+		"price": "993.00",
+		"thumbnails": "https://picsum.photos/seed/P0S5K/640/480"
+	}
+]

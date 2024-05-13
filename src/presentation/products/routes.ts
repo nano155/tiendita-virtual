@@ -2,6 +2,7 @@ import { Router } from "express";
 import { ProductRepositoryImpl, ProductService } from "../../service";
 import { ProductController } from "./controller";
 import { AuthRequired } from "../../middleware/auth-required";
+import { ErrorRequest } from "../../middleware/error-request";
 
 
 
@@ -22,6 +23,8 @@ export class ProductRoutes {
         router.get('/:id', productController.getProductById)
         router.delete('/:id', AuthRequired.authRequired, productController.deleteProductById)
         router.put('/:id', AuthRequired.authRequired, productController.updateProductById)
+
+        router.use(ErrorRequest.error)
 
         return router
     }

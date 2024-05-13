@@ -1,6 +1,8 @@
 import { Request, Response } from "express";
 import {
   CreateProductDto,
+  CustomError,
+  Eerrors,
   PaginationDto,
   ProductRepository,
   Role,
@@ -17,7 +19,18 @@ export class ProductController {
       return res.status(401).json({ message: "Unauthorized operation" });
 
     const [error, createDto] = CreateProductDto.create(req.body);
-    if (error) return res.status(400).json({ error: error });
+
+    if (error) {
+        CustomError.createError({
+        name: "Create product error",
+        cause: error,
+        message: "Missing Data",
+        code: Eerrors.DATABASE_ERROR,
+      });
+
+      return CustomError
+
+    }
     this.productRepository
       .createProduct(createDto!)
       .then((product) => res.json(product))
