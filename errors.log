@@ -1,0 +1,5 @@
+
+{"level":"error","message":"DELETE en /api/users/logout- at 5/20/2024 - 3:45:06 PM","timestamp":"2024-05-20T20:45:06.061Z"}
+{"level":"error","message":"POST en /api/users/login- at 5/20/2024 - 3:45:36 PM","timestamp":"2024-05-20T20:45:36.596Z"}
+{"level":"error","message":"Error: Invalid credentials","timestamp":"2024-05-20T20:45:36.605Z"}
+{"level":"error","message":"POST en /api/users/login- at 5/20/2024 - 3:47:06 PM","timestamp":"2024-05-20T20:47:06.524Z"}

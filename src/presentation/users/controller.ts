@@ -8,14 +8,19 @@ export class UsersController {
     const [error, loginDto] = LoginUserDto.create(req.body);
 
     if (error) return res.status(500).send(error);
+    
 
     this.userRepository
       .loginUser(loginDto!)
       .then((user) => {
         res.cookie("token", user.token);
+        req.logger?.http(`${req.url}, ${new Date().toLocaleDateString()}`)
         return res.json(user);
       })
-      .catch((error) => res.status(500).json({error: error.message}));
+      .catch((error) => {
+        req.logger?.error(error.message);        
+        return res.status(500).json({error: error.message, message: 'hola'});
+      });
   };
 
   public register = async (req: Request, res: Response) => {
@@ -29,7 +34,10 @@ export class UsersController {
         res.cookie("token", user.token);
         return res.json(user);
       })
-      .catch((error) => res.status(500).json({error: error.message}));
+      .catch((error) => (
+        req.logger?.error(`${error.message}`),
+        res.status(500).json({error: error.message})
+      ));
   };
 
   public logout = (req:Request, res:Response )=>{
@@ -46,7 +54,10 @@ export class UsersController {
 
     this.userRepository.validateEmail(token)
     .then(() => res.json('Email validated'))
-    .catch((error) => res.status(500).json({error: error.message}));
+    .catch((error) => (
+      req.logger?.error(`${error.message}`), 
+      res.status(500).json({error: error.message})
+    ));
 
   }
 }

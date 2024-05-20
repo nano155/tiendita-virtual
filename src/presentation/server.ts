@@ -1,6 +1,7 @@
 import express, { Router }  from 'express'
 import cookieParser from 'cookie-parser'
 import cors from 'cors'
+import { LoggerApp } from '../middleware/add-logger';
 
 interface Options  {
 
@@ -32,8 +33,15 @@ export class ServerApp {
         this.app.use(express.urlencoded({extended:true}))
         this.app.use(cookieParser())
 
+        this.app.use(LoggerApp.addLogger)
+
         this.app.use(express.static(this.public_path))
         this.app.use(this.routes)
+
+        this.app.get('/logger' , (req, res) =>{
+            req.logger?.warning('Mensaje de prueba log en un endpoint: /logger')
+            res.send('prueba logger')
+        })
 
         this.app.listen(this.port, ()=>{
             console.log(`listen port ${this.port}`);
